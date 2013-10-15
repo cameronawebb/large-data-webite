@@ -1,0 +1,30 @@
+# humanstxt.org
+
+# TEAM
+
+Designer & Developer: Cameron Webb <webb0084@gmail.com>
+Site: http://arcticplants.com
+GitHub: https://github.com/cameronawebb
+Twitter: @twebb0084
+Location: Ottawa, Canada
+
+---
+
+# THANKS
+
+
+
+---
+
+# TECHNOLOGY
+
+## Software
+
+- Dreamweaver
+- Git + GitHub
+- Grunt.js
+- Markdown
+
+## Hosting
+
+- github <http://github.com>
