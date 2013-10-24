@@ -1,5 +1,0 @@
-# robotstxt.org
-
-Sitemap: http://arcticplants.com/sitemap.xml
-
-User-Agent: Cameron Webb
