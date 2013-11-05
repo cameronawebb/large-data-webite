@@ -1,0 +1,41 @@
+.skiplinks{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	font-size: 1.25rem;
+	list-style-type: none;
+	z-index: 3000;
+	width: 100%;
+}
+
+.skiplinks a,
+.skiplinks a:link,
+.skiplinks a:visited {
+	display: inline-block;
+	padding: 0.5em 0.75em;
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+	top: -10em;
+	position: absolute;
+
+}
+
+.skiplinks a:focus {
+	top: 0;
+}
+
+a,
+a:link,
+a:visited{
+outline: none; /*removes the keyboard selection highlight */
+}
+
+a:hover,
+a:active{
+outline: none; /*removes the keyboard selection highlight */
+}
+
+a:focus{
+	outline: 2px solid #000;
+	}

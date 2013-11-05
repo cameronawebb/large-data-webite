@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Off Canvas Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" title="Disabled for Preview-in-Browser: css/bootstrap.css">
+<style type="text/css">
+
 /*!
  * Bootstrap v3.0.0
  *
@@ -2400,8 +2415,8 @@ input[type="button"].btn-block {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 
 .glyphicon {
@@ -6829,3 +6844,289 @@ td.visible-print {
     display: none !important;
   }
 }
+
+</style>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" title="Disabled for Preview-in-Browser: css/offcanvas.css">
+<style type="text/css">
+
+/*
+ * Style twaks
+ * --------------------------------------------------
+ */
+body {
+  padding-top: 0;
+}
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+</style>
+    <link rel="stylesheet" title="Disabled for Preview-in-Browser: css/general.css">
+<style type="text/css">
+
+.skiplinks{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	font-size: 1.25rem;
+	list-style-type: none;
+	z-index: 3000;
+	width: 100%;
+}
+
+.skiplinks a,
+.skiplinks a:link,
+.skiplinks a:visited {
+	display: inline-block;
+	padding: 0.5em 0.75em;
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+	top: -10em;
+	position: absolute;
+
+}
+
+.skiplinks a:focus {
+	top: 0;
+}
+
+a,
+a:link,
+a:visited{
+outline: none; /*removes the keyboard selection highlight */
+}
+
+a:hover,
+a:active{
+outline: none; /*removes the keyboard selection highlight */
+}
+
+a:focus{
+	outline: 2px solid #000;
+	}
+
+</style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <ul class="skiplinks">
+  	<li><a href="#main">Skip to primary content</a></li>
+    <li><a href="#complementary">Skip to secondary content</a></li>
+    <li><a href="#navigation">Skip to Navigation</a></li>
+  </ul>
+    <div class="navbar-wrapper">
+      <div class="nav-container">
+
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Arctic Vegetation</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                  <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tree/Plants <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spruce</a></li>
+                    <li><a href="#">Dwarf Shrub</a></li>
+                    <li><a href="#">Lavender</a></li>
+                    <li><a href="#">Thyme</a></li>
+                    <li><a href="#">Erica</a></li>
+                  </ul>
+                </li>
+                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Moss/lichen <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Black Lichen</a></li>
+                    <li><a href="#">Map Lichen</a></li>
+                    <li><a href="#">Orange Moss</a></li>                    
+                    <li><a href="#">Reindeer Moss</a></li>
+                    <li><a href="article.html">Red Algae</a></li>
+                  </ul>
+                </li>
+                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Flowers <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Moss Campion</a></li>
+                    <li><a href="#">Arctic Willow</a></li>
+                    <li><a href="#">Arctic Avens</a></li>                  
+                    <li><a href="#">Arctic Poppy</a></li>
+                    <li><a href="#">Mountain Sorrel</a></li>
+                    <li><a href="article-2.html">Cotton Grass</a></li>
+                    <li><a href="#">Lousewort</a></li>
+                    <li><a href="#">Mastadon Flower</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">            
+            <img class="flex" src="img/redalgae.jpeg">
+          </div>
+          <div class="row">            
+            <div class="col-11 col-sm-11 col-lg-9">
+            <main role="main" id="main">
+              <h2>Red Algae</h2>
+              </main>
+              <p>The red algae, or Rhodophyta (roh-dof-fit-ta) from Ancient Greek: ῥόδον rhodon, "rose" and φυτόν phyton, "plant"), are one of the oldest groups of eukaryotic algae, and also one of the largest, with about 5,000–6,000 species of mostly multicellular, marine algae, including many notable seaweeds. Other references indicate as many as 10,000 species; more detailed counts indicate about 4,000 in about 600 genera (3,738 marine species in 546 genera and 10 orders (plus the unclassifiable); 164 freshwater species in 30 genera in eight orders).
+The red algae form a distinct group characterized by these attributes: eukaryotic cells without flagella and centrioles, using floridean polysaccharides as food reserves, with phycobiliproteins as accessory pigments (giving them their red color), and with chloroplasts lacking external endoplasmic reticulum and containing unstacked thylakoids. Most red algae are also multicellular, macroscopic, marine, and have sexual reproduction. They often have alternation of generations and may have three generations rather than two.</p>
+<p>Many of the coralline algae, which secrete calcium carbonate and play a major role in building coral reefs, belong here. Red algae such as dulse (Palmaria palmata) and laver (nori/gim) are a traditional part of European and Asian cuisines and are used to make other products such as agar, carrageenans and other food additives.</p>
+
+<aside role="complementary" id="complementary">
+				<h3>Species of red algae</h3>
+                </aside>
+
+				<p>Around 6,500 to 10,000 species are known, nearly all of which are marine, with about 200 that only live in fresh water. However, estimates of the number of real species vary by 100%. 
+
+Some examples of species and genera of red algae are:
+<p>Cyanidioschyzon merolae, a primitive red alga</p>
+<p>Atractophora hypnoides</p>
+<p>Gelidiella calcicola</p>
+<p>Lemanea, a freshwater genus</p>
+<p>Palmaria palmata, dulse</p>
+<p>Schmitzia hiscockiana</p>
+<p>Chondrus crispus, Irish moss</p>
+<p>Mastocarpus stellatus</p>
+<p>Vanvoorstia bennettiana, became extinct in the early 20th century</p>
+<p>Acrochaetium efflorescens</p>
+<p>Audouinella, with freshwater as well as marine species</p>
+
+<aside role="complementary" id="complementary">
+				<h3>Chemistry</h3>
+                </aside>
+
+				<p>Algal group	δ13C range</p>
+<p>HCO3-using red algae	−22.5‰ to −9.6‰</p>
+<p>CO2-using red algae	−34.5‰ to −29.9‰</p>
+<p>Brown algae	−20.8‰ to −10.5‰</p>
+<p>Green algae	−20.3‰ to −8.8‰</p>
+<p>The δ13C values of red algae reflect their lifestyles. The largest difference results from their photosynthetic metabolic pathway: algae that use HCO3 as a carbon source have far more negative δ13C values than those that only use CO2. An additional difference of about 1.71‰ separates groups intertidal from those below the lowest tide line, which are never exposed to atmospheric carbon. The latter group uses the more 13C-negative CO2 dissolved in sea water, whereas those with access to atmospheric carbon reflect the more positive signature of this reserve.</p>
+
+<p>Red algae are red due to phycoerythrin. They contain the sulfated polysaccharide carrageenan in the amorphous sections of their cell walls, although red algae from the genus Porphyra contain porphyran. They also produce a specific type of tannin called phlorotannins, but in lower amount than brown algae do.</p>
+
+<aside role="complementary" id="complementary">
+				<h3>Morphology</h3>
+</aside>
+				<p>Red algae have double cell walls. The outer layers are usually composed of "pectic substances", from which agar can be manufactured. The internal walls are mostly cellulose.</p>
+
+				<h2>Pit connections and pit plugs</h2>
+
+<aside role="complementary" id="complementary">
+				<h3>Pit connections</h3>
+                </aside>
+
+				<p>Pit connections and pit plugs are unique and distinctive features of red algae that form during the process of cytokinesis following mitosis. In red algae, cytokinesis is incomplete. Typically, a small pore is left in the middle of the newly formed partition. The pit connection is formed where the daughter cells remain in contact.</p>
+
+<p>Shortly after the pit connection is formed, cytoplasmic continuity is blocked by the generation of a pit plug, which is deposited in the wall gap that connects the cells.
+Connections between cells having a common parent cell are called primary pit connections. Because apical growth is the norm in red algae, most cells have two primary pit connections, one to each adjacent cell.</p>
+
+<p>Connections that exist between cells not sharing a common parent cells are labeled secondary pit connections. These connections are formed when an unequal cell division produced a nucleated daughter cell that then fuses to an adjacent cell. Patterns of secondary pit connections can be seen in the order 
+Ceramiales.</p>
+
+<aside role="complementary" id="complementary">
+				<h3>Pit plugs</h3>
+                </aside>
+
+<p>After a pit connection is formed, tubular membranes appear. A granular protein, called the plug core, then forms around the membranes. The tubular membranes eventually disappear. While  </p>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="well sidebar-nav">
+            <ul class="nav">
+            <p>Other Moss</p>
+              <li><a href="#">Black Lichen</a></li>
+              <li><a href="#">Map Lichen</a></li>
+              <li><a href="#">Orange Moss</a></li>
+              <li><a href="#">Reindeer Moss</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Arctic Vegetation 2013</p>
+      </footer>
+
+    </div><!--/.container-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/offcanvas.js"></script>
+  </body>
+</html>

@@ -20,6 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
     
     <!-- Facebook -->
 	<meta property="og:type" content="article">
@@ -41,6 +42,13 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
+  
+  <ul class="skiplinks">
+  	<li><a href="#main">Skip to primary content</a></li>
+    <li><a href="#complementary">Skip to secondary content</a></li>
+    <li><a href="#navigation">Skip to Navigation</a></li>
+  </ul>
+  <nav role:"navigation" id="navigation">
     <div class="navbar-wrapper">
       <div class="nav-container">
 
@@ -114,9 +122,11 @@
           <img src="img/original.jpg" data-src="" alt="First slide/Red algae">
           <div class="container">
             <div class="carousel-caption">
+            
               <h1>Blood Red Algea</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
               <p><a class="btn btn-large btn-primary" href="article.html">Learn More</a></p>
+              
             </div>
           </div>
         </div>
@@ -124,9 +134,11 @@
           <img src="img/Field_of_Arctic_Poppies_Near_Nain_Labrador_Canada_wallpaper_1366x768.jpg" data-src="" alt="Second slide/Arctic poppies">
           <div class="container">
             <div class="carousel-caption">
+            
               <h1>Season of the Arctic Poppies</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
               <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+              
             </div>
           </div>
         </div>
@@ -134,9 +146,11 @@
           <img src="img/greenland_cotton_grass_©_erwin_vermeulen_(23).jpg" data-src="" alt="Third slide/Cotton grass">
           <div class="container">
             <div class="carousel-caption">
+            
               <h1>The Snow of the Cotton Grass</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
               <p><a class="btn btn-large btn-primary" href="article-2.html">Learn More</a></p>
+              
             </div>
           </div>
         </div>
@@ -156,20 +170,26 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="img/DB 03 2612.jpg" data-src="" alt="Generic placeholder image">
+          <img class="img-circle" src="img/DB 03 2612.jpg" data-src="" alt="Purple Saxifrage">
+            <main role="main" id="main">
           <h2>Stone-crushers</h2>
+          </main>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="img/Spruce_tree_IMG_0444.JPG" data-src="" alt="Generic placeholder image">
+          <img class="img-circle" src="img/Spruce_tree_IMG_0444.JPG" data-src="" alt="Spruce Tree">
+          <aside role="complementary" id="complementary">
           <h2>Spruce up the Season</h2>
+          </aside>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="img/Erica_leucantha_flower_detail.JPG" data-src="" alt="Generic placeholder image">
+          <img class="img-circle" src="img/Erica_leucantha_flower_detail.JPG" data-src="" alt="Erica Leucantha">
+          <aside role="complementary" id="complementary">
           <h2>Beautiful Erica</h2>
+          </aside>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
@@ -178,7 +198,7 @@
 
 
       <!-- FOOTER -->
-      <footer>
+      <footer role="contentinfo">
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2013 Arctic Vegetation. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
